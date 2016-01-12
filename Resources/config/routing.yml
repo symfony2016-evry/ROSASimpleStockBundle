@@ -1,0 +1,18 @@
+sym16_simple_stock_homepage:
+    path:     /
+    defaults: { _controller: SYM16SimpleStockBundle:Default:index }
+
+
+sym16_simple_stock_bundle_ilike:
+    path:     /iLike/{unVerbe}
+    defaults: { _controller: SYM16SimpleStockBundle:ROSAPremierControleur:iLike }
+
+sym16_simple_stock_bundle_produit:
+    path:     /produit/{nombre1}
+    defaults: { _controller: SYM16SimpleStockBundle:ROSAPremierControleur:produit }
+    requirements:
+	multiplicande: ^[0-9a-fA-f]*$
+	multiplicateur: ^[0-9a-fA-f]*$
+
+
+
